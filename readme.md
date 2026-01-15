@@ -46,15 +46,6 @@ safety-critical. The right call was to simplify the system to its core safety fu
 ensuring the hard real-time deadlines are always met and offloading non-essential features 
 like audio to a separate, non-safety-critical processor.
 
-## Company Synopsis (Google Gemini used to generate company synopsis)
-Universal Creative is the master planning, design, and engineering division for Universal 
-Destinations & Experiences. They are responsible for creating the world's most immersive 
-theme park attractions, from The Wizarding World of Harry Potter™ to the Jurassic World 
-VelociCoaster. A real-time operating system (RTOS) is non-negotiable for their rides, as 
-it provides the determinism needed to guarantee rider safety. An RTOS ensures that critical 
-events, like an E-Stop, are processed within a fixed, predictable deadline, something a 
-standard OS cannot promise.
-
 ## Task & Deadline Analysis
 Task                       ISR Name	Period   Deadline	Type	  Consequence of Failure
 gpio_isr_handler            Aperiodic / ~10µs	     Hard	      Catastrophic. 
